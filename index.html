@@ -63,12 +63,12 @@
 				e.clearSelection();
 			});
 
-			$.get("http://api.timezonedb.com/v2/get-time-zone?key=XW3U61PTYFQM&format=json&by=zone&zone=Australia/Sydney", function(data) {
+			$.get("https://api.timezonedb.com/v2/get-time-zone?key=XW3U61PTYFQM&format=json&by=zone&zone=Australia/Sydney", function(data) {
 				document.getElementById("uuid").innerHTML = base_converter(data.timestamp);
 			});
 
 			$('#generate-id').click(function() {
-				$.get("http://api.timezonedb.com/v2/get-time-zone?key=XW3U61PTYFQM&format=json&by=zone&zone=Australia/Sydney", function(data) {
+				$.get("https://api.timezonedb.com/v2/get-time-zone?key=XW3U61PTYFQM&format=json&by=zone&zone=Australia/Sydney", function(data) {
 					document.getElementById("uuid").innerHTML = base_converter(data.timestamp);
 				});
 			});

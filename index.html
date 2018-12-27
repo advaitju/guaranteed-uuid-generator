@@ -71,6 +71,7 @@
 				$.get("https://api.timezonedb.com/v2/get-time-zone?key=XW3U61PTYFQM&format=json&by=zone&zone=Australia/Sydney", function(data) {
 					document.getElementById("uuid").innerHTML = base_converter(data.timestamp);
 				});
+				$("#copied").addClass("hide");
 			});
 		});
 	</script>
